@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416112167372",
+    "project_id": "reddit-55762",
+    "storage_bucket": "reddit-55762.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416112167372:android:2e3415216b20a93b79b569",
+        "android_client_info": {
+          "package_name": "com.na.reddit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRd_C5HsLfoIDkn7tmFHNKoDQj-gonOsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
