@@ -1,25 +1,32 @@
 # Reddit
 
-Flutter project: Reddit clone
+Flutter project: Reddit Clone
 
 ## Features:
-  Google authentication <br />
-  Guest authentication <br />
-  Create community <br />
-  Join community, leave community <br />
-  Community Profile (Avatar, Banner, Members) <br />
-  Edit description and avatar of Community <br />
-  Create post (link only, photo, text only) <br />
-  Delete post <br />
-  Upvote, Downvote on post <br />
-  Comment on post <br />
-  Displaying posts from communities user <br />
-  Add moderators <br />
-  Moderator- remove post <br />
-  User profile (Avatar, Banner) <br />
+<ul>
+  <li>Google authentication</li>
+  <li>Guest authentication</li>
+  <li>Create community</li>
+  <li>Join community, leave community</li>
+  <li>Community Profile (Avatar, Banner, Members)</li>
+  <li>Edit description and avatar of Community</li>
+  <li>Create post (link only, photo, text only)</li>
+  <li>Delete post</li>
+  <li>Upvote, Downvote on post</li>
+  <li>Comment on post</li>
+  <li>Displaying posts from communities user</li>
+  <li>Add moderators</li>
+  <li>Moderator- remove post</li>
+  <li>User profile (Avatar, Banner)</li>
+  </ul>
+  
  
 ## Tech used: 
-Flutter, Riverpod 2.0, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
+<ul>
+  <li>
+    Flutter, Riverpod 2.0, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
+  </li>
+</ul>
 
 ##
 
