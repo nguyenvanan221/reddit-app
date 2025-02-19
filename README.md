@@ -18,7 +18,7 @@ Add moderators
 Moderator- remove post
 User profile (Avatar, Banner)
 
-## Tech used: 
+### Tech used: 
 Flutter, Riverpod 2.0, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
 
 ![image](https://github.com/user-attachments/assets/f2918d82-3ce1-4e64-b166-9ba701541304)
