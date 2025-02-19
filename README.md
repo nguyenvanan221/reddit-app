@@ -24,7 +24,7 @@ Flutter project: Reddit Clone
 ## Tech used: 
 <ul>
   <li>
-    Flutter, Riverpod 2.0, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
+    Flutter, Riverpod, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
   </li>
 </ul>
 
