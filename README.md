@@ -1,16 +1,23 @@
-# reddit
+# Reddit
 
-A new Flutter project.
+Flutter project: Reddit clone
 
-## Getting Started
+## Features:
+Google authentication
+Guest authentication
+Create community
+Join community, leave community
+Community Profile (Avatar, Banner, Members)
+Edit description and avatar of Community
+Create post (link only, photo, text only)
+Delete post
+Upvote, Downvote on post
+Comment on post
+Displaying posts from communities user
+Add moderators
+Moderator- remove post
+User profile (Avatar, Banner)
 
-This project is a starting point for a Flutter application.
+### Tech used: 
+Flutter, Riverpod 2.0, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
