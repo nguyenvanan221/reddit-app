@@ -9,7 +9,7 @@ import 'package:reddit/features/home/drawers/profile_drawer.dart';
 import 'package:reddit/theme/pallete.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() => _HomeScreenState();
@@ -35,6 +35,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider)!;
+    final isGuest = !user.isAuthenticated;
 
     return Scaffold(
       appBar: AppBar(
@@ -66,23 +67,27 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       ),
       body: Constants.tabWidgets[_page],
       drawer: const CommunityListDrawer(),
-      endDrawer: const ProfileDrawer(),
-      bottomNavigationBar: CupertinoTabBar(
-        activeColor: Pallete.darkModeAppTheme.appBarTheme.iconTheme!.color,
-        backgroundColor: Pallete.darkModeAppTheme.appBarTheme.backgroundColor,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.add),
-            label: '',
-          ),
-        ],
-        onTap: onPageChanged,
-        currentIndex: _page,
-      ),
+      endDrawer: isGuest ? null : const ProfileDrawer(),
+      bottomNavigationBar: isGuest
+          ? null
+          : CupertinoTabBar(
+              activeColor:
+                  Pallete.darkModeAppTheme.appBarTheme.iconTheme!.color,
+              backgroundColor:
+                  Pallete.darkModeAppTheme.appBarTheme.backgroundColor,
+              items: const [
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: '',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.add),
+                  label: '',
+                ),
+              ],
+              onTap: onPageChanged,
+              currentIndex: _page,
+            ),
     );
   }
 }

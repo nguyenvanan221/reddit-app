@@ -29,6 +29,7 @@ class CommunityScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final user = ref.watch(userProvider)!;
+    final isGuest = !user.isAuthenticated;
 
     return Scaffold(
       body: ref.watch(getCommunityByNameProvider(name)).when(
@@ -74,35 +75,36 @@ class CommunityScreen extends ConsumerWidget {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          community.mods.contains(user.uid)
-                              ? OutlinedButton(
-                                  onPressed: () {
-                                    navigateToModTools(context);
-                                  },
-                                  style: ElevatedButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20),
+                          if (!isGuest)
+                            community.mods.contains(user.uid)
+                                ? OutlinedButton(
+                                    onPressed: () {
+                                      navigateToModTools(context);
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 25),
                                     ),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 25),
-                                  ),
-                                  child: const Text('Mod tools'),
-                                )
-                              : OutlinedButton(
-                                  onPressed: () =>
-                                      joinCommunity(ref, community, context),
-                                  style: ElevatedButton.styleFrom(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(20),
+                                    child: const Text('Mod tools'),
+                                  )
+                                : OutlinedButton(
+                                    onPressed: () =>
+                                        joinCommunity(ref, community, context),
+                                    style: ElevatedButton.styleFrom(
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ),
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 25),
                                     ),
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 25),
+                                    child: Text(
+                                        community.members.contains(user.uid)
+                                            ? 'joined'
+                                            : 'Join'),
                                   ),
-                                  child: Text(
-                                      community.members.contains(user.uid)
-                                          ? 'joined'
-                                          : 'Join'),
-                                ),
                         ],
                       ),
                       Padding(
