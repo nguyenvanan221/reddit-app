@@ -1,6 +1,6 @@
-# Reddit
+# Reddit App
 
-Flutter project: Reddit Clone
+Flutter project: Reddit App
 
 ## Features:
 <ul>
