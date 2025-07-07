@@ -1,8 +1,8 @@
 # Reddit App
 
-Flutter project: Reddit App
+Flutter project
 
-## Features:
+## FEATURES
 <ul>
   <li>Google authentication</li>
   <li>Guest authentication</li>
@@ -21,14 +21,14 @@ Flutter project: Reddit App
   </ul>
   
  
-## Tech used: 
+## TECH USED
 <ul>
   <li>
     Flutter, Riverpod, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
   </li>
 </ul>
 
-##
+## DEMO
 
 ![image](https://github.com/user-attachments/assets/f2918d82-3ce1-4e64-b166-9ba701541304)
 
