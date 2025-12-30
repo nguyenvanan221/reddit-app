@@ -2,7 +2,7 @@
 
 Flutter project
 
-## FEATURES
+## Features
 <ul>
   <li>Google authentication</li>
   <li>Guest authentication</li>
@@ -21,14 +21,14 @@ Flutter project
   </ul>
   
  
-## TECH USED
+## Tech Used
 <ul>
   <li>
     Flutter, Riverpod, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
   </li>
 </ul>
 
-## DEMO
+## Demo
 
 ![image](https://github.com/user-attachments/assets/f2918d82-3ce1-4e64-b166-9ba701541304)
 
