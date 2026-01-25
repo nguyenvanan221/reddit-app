@@ -3,30 +3,28 @@
 Flutter project
 
 ## Features
-<ul>
-  <li>Google authentication</li>
-  <li>Guest authentication</li>
-  <li>Create community</li>
-  <li>Join community, leave community</li>
-  <li>Community Profile (Avatar, Banner, Members)</li>
-  <li>Edit description and avatar of Community</li>
-  <li>Create post (link only, photo, text only)</li>
-  <li>Delete post</li>
-  <li>Upvote, Downvote on post</li>
-  <li>Comment on post</li>
-  <li>Displaying posts from communities user</li>
-  <li>Add moderators</li>
-  <li>Moderator- remove post</li>
-  <li>User profile (Avatar, Banner)</li>
-  </ul>
-  
+- Google authentication
+- Guest authentication
+- Create community
+- Join community, leave community
+- Community Profile (Avatar, Banner, Members)
+- Edit description and avatar of Community
+- Create post (link only, photo, text only)
+- Delete post
+- Upvote, Downvote on post
+- Comment on post
+- Displaying posts from communities user
+- Add moderators
+- Moderator- remove post
+- User profile (Avatar, Banner)
  
-## Tech Used
-<ul>
-  <li>
-    Flutter, Riverpod, Routemaster, Firebase Auth, Firebase Storage, Firebase Firestore
-  </li>
-</ul>
+## Tech Stack
+- Flutter
+- State Management: Riverpod
+- Route: Routemaster
+- Authentication: Firebase Auth
+- Database: Firebase Firestore
+ 
 
 Screenshots:<br>
 
