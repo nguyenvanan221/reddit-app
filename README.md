@@ -21,7 +21,7 @@ Flutter project
 ## Tech Stack
 - Flutter
 - State Management: Riverpod
-- Route: Routemaster
+- Navigation: Routemaster
 - Authentication: Firebase Auth
 - Database: Firebase Firestore
  
